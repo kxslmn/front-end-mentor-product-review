@@ -85,16 +85,17 @@ main .product-img {
   color: white;
   font-size: 0.6rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   body {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
   main {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   main .product-img {
     content: url("images/image-product-mobile.jpg");
     width: 100%;
+    object-fit: cover;
     border-radius: 8px 8px 0 0;
   }
   .text {
